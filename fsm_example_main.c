@@ -6,10 +6,10 @@ typedef enum {SX, S1R, S2R, S3R, S4R, S1W, S2W, S3W, S4W} passcode_state_t;
 #define INPUT_ARRAY_SIZE 15
 
 // In this example the PIN for unlocking is 9876
-#define PIN1st_DIGIT 9
-#define PIN2nd_DIGIT 8
-#define PIN3rd_DIGIT 7
-#define PIN4th_DIGIT 6
+#define PIN1st_DIGIT 2
+#define PIN2nd_DIGIT 5
+#define PIN3rd_DIGIT 3
+#define PIN4th_DIGIT 4
 
 
 bool passcodeFSM(int guess);
@@ -38,7 +38,7 @@ int getGuessInput()
 {
     // since we have not written any code that reads input from a keypad (we even don't have a keypad on this kit)
     // we use a synthetic input. In other words, we make up some input to test our fsm
-    int guesses[INPUT_ARRAY_SIZE] = {9, 8, 7, 6, 0,
+    int guesses[INPUT_ARRAY_SIZE] = {2, 5, 3, 4, 0,
                                      9, 8, 7, 5, 0,
                                      1, 8, 7, 6, 0};
 
